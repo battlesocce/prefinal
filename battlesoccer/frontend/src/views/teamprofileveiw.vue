@@ -1,5 +1,5 @@
 <template>
-  <div class="ody">
+  <div class="ody" v-if='team.coverpic'>
 <div class="profile-page">
     <div v-if='team.coverpic'>
 <v-lazy-image :src="team.coverpic"  class="responsive"
