@@ -7,10 +7,8 @@
   <rankboard></rankboard>
     <div data-aos="zoom-in-right" data-aos-duration="500">
    <card></card></div><br> 
-  <videos></videos><br> 
-<div class="container-sm">
+  <videos></videos>
   <recentteam :teamdata="team"/>
-</div>
 <about></about>
   <footeruse></footeruse>
 </div>
@@ -97,7 +95,9 @@ export default{
 
 <style>
 @import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700');
-
+.ody{
+  overflow: hidden;
+}
 .home {
     width: 100%;
     height: 100vh;
