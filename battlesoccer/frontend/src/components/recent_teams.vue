@@ -1,10 +1,9 @@
 <template>
-<div class="ody">
-  
-<b-row>
-  <div class="container" style="margin-bottom:40px;" >
-<h1><br>Recently added Teams<br></h1></div>
-<b-col  v-for="teamd in teamdata" :key="teamd.id" cols="6" sm="6" md="3" lg="3"><div data-aos="zoom-in-down">
+  <div class="container-sm"><hr>
+    <div class="container" style="margin-bottom:40px;" >
+<h1><br>Recently added Teams</h1></div>
+<div class="row">
+<div class="col-6 col-lg-3"  v-for="teamd in teamdata" :key="teamd.id"><div data-aos="zoom-in-down">
         <router-link
         :to="{ name: 'Teamveiw', params: { id: teamd.id } }"
         >
@@ -19,9 +18,10 @@
 
   </div>
         </router-link></div>
-</b-col>
-</b-row>
 </div>
+</div>
+  </div>
+
 </template>
 
 <script>
@@ -41,6 +41,14 @@ props: {
 
 <style scoped>
 @import '../assets/css/userprofile.css';
+hr {
+  border: 0;
+  clear:both;
+  display:block;
+  width: 96%;               
+  background-color:white;
+  height: 1px;
+}
 .ody a{
 
     font-family: "Quicksand", sans-serif;
